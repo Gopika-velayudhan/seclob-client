@@ -1,0 +1,83 @@
+.navbar {
+  background-color: #003b5c;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1; 
+}
+
+.search-container {
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-container input {
+  border: none;
+  padding: 12px 20px;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  color: #333;
+  background-color: white;
+}
+
+.search-container button {
+  background-color: #f5a623;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-item .badge {
+  background-color: #f5a623;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nav-item svg {
+  color: white;
+  font-size: 18px;
+}

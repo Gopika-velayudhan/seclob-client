@@ -1,0 +1,136 @@
+.product-details {
+  padding: 20px;
+  background: #fff;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  display: flex;
+  gap: 30px;
+}
+
+.gallery {
+  flex: 1;
+}
+
+.main-image {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.thumb {
+  width: 130px;
+  height: 90px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb img {
+  width: 70px;
+}
+
+.info-section {
+  flex: 1;
+}
+
+.info-section h2 {
+  color: #0f3f73;
+  margin-bottom: 10px;
+}
+
+.info-section h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.stock {
+  margin-bottom: 10px;
+}
+
+.stock span {
+  color: green;
+  margin-left: 10px;
+}
+
+.stock-note {
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.ram-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.ram-section button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.active-ram {
+  border: 2px solid #f4a100 !important;
+}
+
+.qty-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-section button {
+  width: 30px;
+  height: 30px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.edit-btn,
+.buy-btn {
+  border: none;
+  background: #f4a100;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.wishlist-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}

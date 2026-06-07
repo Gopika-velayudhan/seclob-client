@@ -1,0 +1,162 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+.main-layout {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 30px;
+  overflow-x: hidden;
+}
+
+/* TOP BUTTONS */
+
+.top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.top-actions button {
+  background: #e8a31b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.top-actions button:hover {
+  background: #cf8f14;
+}
+
+/* PRODUCT GRID */
+
+.product-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(260px, 1fr)
+  );
+  gap: 24px;
+}
+
+/* CARD */
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.product-card h4 {
+  margin-top: 15px;
+  color: #0b4c72;
+  font-size: 15px;
+}
+
+.product-card p {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #444;
+}
+
+.stars {
+  margin-top: 12px;
+  color: #c7c7c7;
+  letter-spacing: 3px;
+}
+
+.wishlist {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 28px;
+  height: 28px;
+  background: #d9eef6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGINATION */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.pagination button {
+  border: none;
+  background: transparent;
+  color: #e8a31b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pagination .active {
+  width: 30px;
+  height: 30px;
+  background: #e8a31b;
+  color: white;
+  border-radius: 50%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  }
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-actions {
+    flex-direction: column;
+  }
+}
