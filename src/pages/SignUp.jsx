@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import axios from "axios";
-import "../styles/Signup.css";
+import "../styles/SignUp.css";
 
 const Signup = () => {
   const navigate = useNavigate();
