@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { getProductsApi, searchProductsApi } from "./pages/Product";
 import { Routes, Route, useLocation } from "react-router-dom";
-import ProductDetails from "./pages/ProductDetails";
+import ProductDetails from "./pages/Productdetails";
 import Navbar from "./components/common/Navbar";
 import Sidebar from "./components/common/Sidebar";
 import ModalManager from "./components/common/Modal";
